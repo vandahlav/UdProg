@@ -28,10 +28,10 @@ def draw_cross(u):
 
 #nastavení počtu sloupců a řádků hrací čtvercové sítě
 sloupec = int(input('Zadejte počet sloupců mřížky:'))
-while sloupec < 0:
+while sloupec <= 0:
     sloupec = int(input('Neplatný zápis. Zadejte znovu počet sloupců mřížky:'))
 radek = int(input('Zadejte počet řádků mřížky:'))
-while radek < 0:
+while radek <= 0:
     radek = int(input('Neplatný zápis. Zadejte znovu počet řádků mřížky:'))
 
 t.speed(0)      #nastavení rychlosti želvy
