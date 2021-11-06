@@ -58,10 +58,10 @@ for _ in range (pocet_policek):
     #první hraje X hráč
     if cross_player == True:
         hrac_x = int(input("X hráči, zadej x-ovou souřadnici: ")) 
-        while hrac_x > radek or hrac_x < 0:
+        while hrac_x > radek or hrac_x <= 0:
             hrac_x = int(input("Chybný zápis, zadejte znovu souřadnice pro X: "))
         hrac_y = int(input("X hráči, zadej y-ovou souřadnici: "))
-        while hrac_y > sloupec or hrac_y < 0:
+        while hrac_y > sloupec or hrac_y <= 0:
             hrac_y = int(input("Chybný zápis, zadejte znovu souřadnice pro Y: ")) 
         t.setpos(hrac_x*delka_strany-delka_strany,hrac_y*delka_strany-delka_strany)
         t.pendown()
@@ -70,10 +70,10 @@ for _ in range (pocet_policek):
         t.penup()
     else:
         hrac_x = int(input("O hráči, zadej x-ovou souřadnici: "))  
-        while hrac_x > radek or hrac_x < 0:
+        while hrac_x > radek or hrac_x <= 0:
             hrac_x = int(input("Chybný zápis, zadejte znovu souřadnice pro X: "))
         hrac_y = int(input("O hráči, zadej y-ovou souřadnici: "))     
-        while hrac_y > sloupec or hrac_y < 0:
+        while hrac_y > sloupec or hrac_y <= 0:
             hrac_y = int(input("Chybný zápis, zadejte znovu souřadnice pro Y: "))
         hrac_x = hrac_x*delka_strany
         hrac_y = hrac_y*delka_strany
