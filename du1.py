@@ -14,6 +14,7 @@ def draw_circle(r):
     t.pencolor('red')
     t.circle(r)
 
+
 #definování funkce pro vykreslení křížku 
 def draw_cross(u): 
     t.pencolor('blue')
